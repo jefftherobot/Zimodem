@@ -139,11 +139,11 @@ const char compile_date[] = __DATE__ " " __TIME__;
 #  define INCLUDE_COMET64 true
 # endif
 #else  // ESP-8266, e.g. ESP-01, ESP-12E
-# define DEFAULT_PIN_DSR 4  
-# define DEFAULT_PIN_DTR 14  
-# define DEFAULT_PIN_RI 12  
-# define DEFAULT_PIN_RTS 13  
-# define DEFAULT_PIN_CTS 15  
+# define DEFAULT_PIN_DSR 4
+# define DEFAULT_PIN_DTR 14
+# define DEFAULT_PIN_RI 12
+# define DEFAULT_PIN_RTS 13
+# define DEFAULT_PIN_CTS 15
 # define DEFAULT_PIN_DCD 5
 # define DEFAULT_PIN_OTH MAX_PIN_NO // pulse pin
 # define DEFAULT_FCT FCT_DISABLED
