@@ -145,12 +145,22 @@ const char compile_date[] = __DATE__ " " __TIME__;
 # define DEFAULT_PIN_RTS 13
 # define DEFAULT_PIN_CTS 15
 # define DEFAULT_PIN_DCD 5
+# define DEFAULT_PIN_SOUND_BUSY 16
 # define DEFAULT_PIN_OTH MAX_PIN_NO // pulse pin
 # define DEFAULT_FCT FCT_DISABLED
 # define debugPrintf doNothing
 # define preEOLN(...)
 # define echoEOLN(...) serial.prints(EOLN)
 #endif
+
+// Sound player definitions
+# define SOUND_DIAL_TONE 1
+# define SOUND_DIALLING (SOUND_DIAL_TONE+1)
+# define NUM_DIAL_SOUNDS 10
+# define SOUND_RING (SOUND_DIALLING+NUM_DIAL_SOUNDS)
+# define SOUND_CONNECT_300 (SOUND_RING+1)
+# define SOUND_CONNECT_1200 (SOUND_CONNECT_300+1)
+# define SOUND_CONNECT_9600 (SOUND_CONNECT_1200+1)
 
 # define INCLUDE_PING true
 
